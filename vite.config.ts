@@ -1,16 +1,15 @@
-import { defineConfig } from "vite"
-import react from "@vitejs/plugin-react-swc"
-import path from "path"
-import { componentTagger } from "lovable-tagger"
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import path from "path";
+import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
   },
   preview: {
-    allowedHosts: ["mediaciondiegodealmagro.cl"], // ✅ ← esta línea permite tu dominio
+    allowedHosts: ["mediaciondiegodealmagro.cl"],
   },
   plugins: [
     react(),
@@ -21,4 +20,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}))
+}));
