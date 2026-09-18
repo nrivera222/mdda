@@ -1,6 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
   "style": "default",
+  
+  "json.schemaDownload.enable": true,
+
   "rsc": false,
   "tsx": true,
   "tailwind": {
